@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://github.com/OctopusDavid/codingxiaochen.github.io/sitemap.xml

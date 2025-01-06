@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>科技阿拉丁的个人博客</title>
+    <link>https://github.com/OctopusDavid/codingxiaochen.github.io/</link>
+    <description>Recent content on 科技阿拉丁的个人博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>me@example.com (codingxiaochen)</managingEditor>
+    <webMaster>me@example.com (codingxiaochen)</webMaster>
+    <lastBuildDate>Tue, 27 Dec 2022 00:54:21 +0800</lastBuildDate>
+    
+        <atom:link href="https://github.com/OctopusDavid/codingxiaochen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>我的第一篇博客</title>
+      <link>https://github.com/OctopusDavid/codingxiaochen.github.io/post/my-first-post/</link>
+      <pubDate>Tue, 27 Dec 2022 00:54:21 +0800</pubDate>
+      <author>me@example.com (codingxiaochen)</author>
+      <guid>https://github.com/OctopusDavid/codingxiaochen.github.io/post/my-first-post/</guid>
+      
+        <description>&lt;h1 id=&#34;这是我的第一篇博客&#34;&gt;这是我的第一篇博客&lt;/h1&gt;
+&lt;p&gt;这是我的第一篇&lt;strong&gt;博客&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://techxiaofei.com&#34;&gt;个人网站链接&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/OctopusDavid/codingxiaochen.github.io/img/hugo/hugo.png&#34; alt=&#34;图片&#34;&gt;&lt;/p&gt;
+</description>
+      
+    </item>
+    
+  </channel>
+</rss>

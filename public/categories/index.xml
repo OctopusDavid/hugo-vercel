@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on 科技阿拉丁的个人博客</title>
-    <link>codingxiaoma.github.io/categories/</link>
+    <link>https://octopusdavid.codingxiaoma.github.io/categories/</link>
     <description>Recent content in Categories on 科技阿拉丁的个人博客</description>
     <generator>Hugo</generator>
     <language>en</language>
     <managingEditor>me@example.com (codingxiaochen)</managingEditor>
     <webMaster>me@example.com (codingxiaochen)</webMaster>
     <lastBuildDate>Tue, 27 Dec 2022 00:54:21 +0800</lastBuildDate>
-    <atom:link href="codingxiaoma.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://octopusdavid.codingxiaoma.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo</title>
-      <link>codingxiaoma.github.io/categories/hugo/</link>
+      <link>https://octopusdavid.codingxiaoma.github.io/categories/hugo/</link>
       <pubDate>Tue, 27 Dec 2022 00:54:21 +0800</pubDate><author>me@example.com (codingxiaochen)</author>
-      <guid>codingxiaoma.github.io/categories/hugo/</guid>
+      <guid>https://octopusdavid.codingxiaoma.github.io/categories/hugo/</guid>
       <description></description>
     </item>
   </channel>

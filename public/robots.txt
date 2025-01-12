@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: codingxiaoma.github.io/sitemap.xml
+Sitemap: https://octopusdavid.codingxiaoma.github.io/sitemap.xml

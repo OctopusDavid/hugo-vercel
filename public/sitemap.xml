@@ -1,43 +1,43 @@
-<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
+<?xml-stylesheet type="text/xsl" href="https://octopusdavid.codingxiaoma.github.io/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>codingxiaoma.github.io/categories/</loc>
+    <loc>https://octopusdavid.codingxiaoma.github.io/categories/</loc>
     <lastmod>2022-12-27T00:54:21+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>codingxiaoma.github.io/categories/hugo/</loc>
+    <loc>https://octopusdavid.codingxiaoma.github.io/categories/hugo/</loc>
     <lastmod>2022-12-27T00:54:21+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>codingxiaoma.github.io/post/</loc>
+    <loc>https://octopusdavid.codingxiaoma.github.io/post/</loc>
     <lastmod>2022-12-27T00:54:21+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>codingxiaoma.github.io/post/my-first-post/</loc>
+    <loc>https://octopusdavid.codingxiaoma.github.io/post/my-first-post/</loc>
     <lastmod>2022-12-27T00:54:21+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>codingxiaoma.github.io/</loc>
+    <loc>https://octopusdavid.codingxiaoma.github.io/</loc>
     <lastmod>2022-12-27T00:54:21+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>codingxiaoma.github.io/tags/</loc>
+    <loc>https://octopusdavid.codingxiaoma.github.io/tags/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

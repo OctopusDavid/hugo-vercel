@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo on 科技阿拉丁的个人博客</title>
-    <link>https://octopusdavid.codingxiaoma.github.io/categories/hugo/</link>
+    <link>https://octopusdavid.github.io/hugo-dev/categories/hugo/</link>
     <description>Recent content in Hugo on 科技阿拉丁的个人博客</description>
     <generator>Hugo</generator>
     <language>en</language>
     <managingEditor>me@example.com (codingxiaochen)</managingEditor>
     <webMaster>me@example.com (codingxiaochen)</webMaster>
     <lastBuildDate>Tue, 27 Dec 2022 00:54:21 +0800</lastBuildDate>
-    <atom:link href="https://octopusdavid.codingxiaoma.github.io/categories/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://octopusdavid.github.io/hugo-dev/categories/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>我的第一篇博客</title>
-      <link>https://octopusdavid.codingxiaoma.github.io/post/my-first-post/</link>
+      <link>https://octopusdavid.github.io/hugo-dev/post/my-first-post/</link>
       <pubDate>Tue, 27 Dec 2022 00:54:21 +0800</pubDate><author>me@example.com (codingxiaochen)</author>
-      <guid>https://octopusdavid.codingxiaoma.github.io/post/my-first-post/</guid>
-      <description>&lt;h1 id=&#34;这是我的第一篇博客&#34;&gt;这是我的第一篇博客&lt;/h1&gt;&#xA;&lt;p&gt;这是我的第一篇&lt;strong&gt;博客&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://techxiaofei.com&#34;&gt;个人网站链接&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://octopusdavid.codingxiaoma.github.io/img/hugo/hugo.png&#34; alt=&#34;图片&#34;&gt;&lt;/p&gt;</description>
+      <guid>https://octopusdavid.github.io/hugo-dev/post/my-first-post/</guid>
+      <description>&lt;h1 id=&#34;这是我的第一篇博客&#34;&gt;这是我的第一篇博客&lt;/h1&gt;&#xA;&lt;p&gt;这是我的第一篇&lt;strong&gt;博客&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://techxiaofei.com&#34;&gt;个人网站链接&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://octopusdavid.github.io/hugo-dev/img/hugo/hugo.png&#34; alt=&#34;图片&#34;&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

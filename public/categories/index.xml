@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on 科技阿拉丁的个人博客</title>
-    <link>http://localhost:9778/hugo-dev/categories/</link>
+    <link>http://localhost:1947/hugo-dev/categories/</link>
     <description>Recent content in Categories on 科技阿拉丁的个人博客</description>
     <generator>Hugo</generator>
     <language>en</language>
     <managingEditor>me@example.com (codingxiaochen)</managingEditor>
     <webMaster>me@example.com (codingxiaochen)</webMaster>
-    <lastBuildDate>Tue, 27 Dec 2022 00:54:21 +0800</lastBuildDate>
-    <atom:link href="http://localhost:9778/hugo-dev/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 26 May 2025 16:04:18 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1947/hugo-dev/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Hugo</title>
-      <link>http://localhost:9778/hugo-dev/categories/hugo/</link>
-      <pubDate>Tue, 27 Dec 2022 00:54:21 +0800</pubDate><author>me@example.com (codingxiaochen)</author>
-      <guid>http://localhost:9778/hugo-dev/categories/hugo/</guid>
+      <title>Hugo相关</title>
+      <link>http://localhost:1947/hugo-dev/categories/hugo%E7%9B%B8%E5%85%B3/</link>
+      <pubDate>Mon, 26 May 2025 16:04:18 +0800</pubDate><author>me@example.com (codingxiaochen)</author>
+      <guid>http://localhost:1947/hugo-dev/categories/hugo%E7%9B%B8%E5%85%B3/</guid>
       <description></description>
     </item>
   </channel>

@@ -2,12 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on 科技阿拉丁的个人博客</title>
-    <link>http://localhost:9778/hugo-dev/tags/</link>
+    <link>http://localhost:1947/hugo-dev/tags/</link>
     <description>Recent content in Tags on 科技阿拉丁的个人博客</description>
     <generator>Hugo</generator>
     <language>en</language>
     <managingEditor>me@example.com (codingxiaochen)</managingEditor>
     <webMaster>me@example.com (codingxiaochen)</webMaster>
-    <atom:link href="http://localhost:9778/hugo-dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 25 May 2025 07:36:54 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1947/hugo-dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>网站建设</title>
+      <link>http://localhost:1947/hugo-dev/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/</link>
+      <pubDate>Sun, 25 May 2025 07:36:54 +0800</pubDate><author>me@example.com (codingxiaochen)</author>
+      <guid>http://localhost:1947/hugo-dev/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>网站SEO</title>
+      <link>http://localhost:1947/hugo-dev/tags/%E7%BD%91%E7%AB%99seo/</link>
+      <pubDate>Sat, 24 May 2025 13:11:46 +0800</pubDate><author>me@example.com (codingxiaochen)</author>
+      <guid>http://localhost:1947/hugo-dev/tags/%E7%BD%91%E7%AB%99seo/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

@@ -1,12 +1,12 @@
 ---
-title: "Index"
-date: 2025-01-13T00:54:25+08:00
-lastmod: 2025-01-13T00:54:25+08:00
+title: "Hugo源代码托管Vercel加载不了CSS的原因"
+date: 2025-05-27T08:48:50+08:00
+lastmod: 2025-05-27T08:48:50+08:00
 draft: true
 keywords: []
 description: ""
-tags: []
-categories: []
+tags: [hugo,vercel]
+categories: [hugo相关]
 author: ""
 
 # Uncomment to pin article to front page

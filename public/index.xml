@@ -2,39 +2,512 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>科技阿拉丁的个人博客</title>
-    <link>http://localhost:9778/hugo-dev/</link>
+    <link>http://localhost:1947/hugo-dev/</link>
     <description>Recent content on 科技阿拉丁的个人博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>me@example.com (codingxiaochen)</managingEditor>
     <webMaster>me@example.com (codingxiaochen)</webMaster>
-    <lastBuildDate>Mon, 13 Jan 2025 00:54:25 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 26 May 2025 16:16:08 +0800</lastBuildDate>
     
-        <atom:link href="http://localhost:9778/hugo-dev/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:1947/hugo-dev/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Index</title>
-      <link>http://localhost:9778/hugo-dev/post/%E6%88%91%E7%9A%84%E7%AC%AC%E4%BA%8C%E7%AF%87%E6%96%87%E7%AB%A0/</link>
-      <pubDate>Mon, 13 Jan 2025 00:54:25 +0800</pubDate>
+      <title>为什么要用hugo命令新建文章</title>
+      <link>http://localhost:1947/hugo-dev/post/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E7%94%A8hugo%E5%91%BD%E4%BB%A4%E6%96%B0%E5%BB%BA%E6%96%87%E7%AB%A0/</link>
+      <pubDate>Mon, 26 May 2025 16:16:08 +0800</pubDate>
       <author>me@example.com (codingxiaochen)</author>
-      <guid>http://localhost:9778/hugo-dev/post/%E6%88%91%E7%9A%84%E7%AC%AC%E4%BA%8C%E7%AF%87%E6%96%87%E7%AB%A0/</guid>
+      <guid>http://localhost:1947/hugo-dev/post/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E7%94%A8hugo%E5%91%BD%E4%BB%A4%E6%96%B0%E5%BB%BA%E6%96%87%E7%AB%A0/</guid>
       
-        <description></description>
+        <description>&lt;p&gt;你&lt;strong&gt;不一定非得用 &lt;code&gt;hugo&lt;/code&gt; 命令&lt;/strong&gt;来新建文章，&lt;strong&gt;直接手动新建 &lt;code&gt;.md&lt;/code&gt; 文件也是可以的&lt;/strong&gt;，只要你放对了路径、写好了前置参数（front matter）。&lt;/p&gt;
+&lt;p&gt;不过用 &lt;code&gt;hugo new&lt;/code&gt; 命令有以下几个好处：&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-用-hugo-new-命令的优点&#34;&gt;✅ 用 &lt;code&gt;hugo new&lt;/code&gt; 命令的优点：&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;bash
+
+
+CopyEdit
+hugo new posts/my-new-post.md
+&lt;/code&gt;&lt;/pre&gt;&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;自动生成 front matter（前置参数）&lt;/strong&gt;：包括 title、date、draft 等字段，格式规范。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;自动放到正确的路径&lt;/strong&gt;：比如 &lt;code&gt;content/posts/&lt;/code&gt; 下。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;避免忘记扩展名或格式问题&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;配合 archetypes 模板更强大&lt;/strong&gt;：可以自定义不同类型文章的默认 front matter。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-手动创建-md-文件的做法&#34;&gt;✅ 手动创建 &lt;code&gt;.md&lt;/code&gt; 文件的做法：&lt;/h3&gt;
+&lt;p&gt;你也可以手动在 &lt;code&gt;content/posts/&lt;/code&gt; 目录下新建：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;bash
+
+
+CopyEdit
+content/posts/my-manual-post.md
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;然后写好 front matter，例如：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;markdownCopyEdit---
+title: &amp;#34;手动创建的文章&amp;#34;
+date: 2025-05-25T10:00:00+08:00
+draft: true
+---
+内容开始……
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;只要位置和格式正确，Hugo 照样能识别。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-总结建议&#34;&gt;🔧 总结建议：&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;方式&lt;/th&gt;
+          &lt;th&gt;是否可行&lt;/th&gt;
+          &lt;th&gt;推荐程度&lt;/th&gt;
+          &lt;th&gt;适合人群&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;hugo new&lt;/code&gt; 命令&lt;/td&gt;
+          &lt;td&gt;✅&lt;/td&gt;
+          &lt;td&gt;⭐⭐⭐⭐&lt;/td&gt;
+          &lt;td&gt;初学者、追求规范的写作流程&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;手动新建 &lt;code&gt;.md&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;✅&lt;/td&gt;
+          &lt;td&gt;⭐⭐⭐&lt;/td&gt;
+          &lt;td&gt;熟悉 Hugo 文件结构的用户&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;p&gt;需要我帮你写一个适合你博客的 &lt;code&gt;archetypes&lt;/code&gt; 模板吗？可以让你每次 &lt;code&gt;hugo new&lt;/code&gt; 自动带上你常用的 front matter。&lt;/p&gt;
+&lt;h5 id=&#34;you-said&#34;&gt;You said:&lt;/h5&gt;
+&lt;p&gt;hugo server 与 hugo server -D这两个命令有什么区别？&lt;/p&gt;
+&lt;h6 id=&#34;chatgpt-said&#34;&gt;ChatGPT said:&lt;/h6&gt;
+&lt;p&gt;这两个命令的区别在于是否&lt;strong&gt;包含草稿（draft）文章&lt;/strong&gt;：&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-hugo-server&#34;&gt;✅ &lt;code&gt;hugo server&lt;/code&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;默认不包含草稿（draft: true）的文章&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;只会生成并预览那些 &lt;code&gt;draft: false&lt;/code&gt; 或没有 &lt;code&gt;draft&lt;/code&gt; 字段的文章。&lt;/li&gt;
+&lt;li&gt;适合用于发布前的最终预览。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-hugo-server--d&#34;&gt;✅ &lt;code&gt;hugo server -D&lt;/code&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;-D&lt;/code&gt; 是 &lt;code&gt;--buildDrafts&lt;/code&gt; 的简写。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;会包含所有设置了 &lt;code&gt;draft: true&lt;/code&gt; 的草稿文章&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;适合开发、写作过程中的预览，即使文章还没正式发布。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-示例&#34;&gt;📝 示例&lt;/h3&gt;
+&lt;p&gt;假设你有这样一篇文章：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;markdownCopyEdit---
+title: &amp;#34;我的草稿文章&amp;#34;
+date: 2025-05-25
+draft: true
+---
+还在写的内容……
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;hugo server&lt;/code&gt;：不会在页面中显示这篇文章。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hugo server -D&lt;/code&gt;：会在页面中显示这篇文章。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-实用建议&#34;&gt;✅ 实用建议：&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;命令&lt;/th&gt;
+          &lt;th&gt;用途&lt;/th&gt;
+          &lt;th&gt;是否显示草稿&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;hugo server&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;最终发布前预览&lt;/td&gt;
+          &lt;td&gt;❌ 不显示草稿&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;hugo server -D&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;开发写作时预览&lt;/td&gt;
+          &lt;td&gt;✅ 显示草稿&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</description>
       
     </item>
     
     <item>
-      <title>我的第一篇博客</title>
-      <link>http://localhost:9778/hugo-dev/post/my-first-post/</link>
+      <title>Hugo的文章头部参数</title>
+      <link>http://localhost:1947/hugo-dev/post/hugo%E7%9A%84%E6%96%87%E7%AB%A0%E5%A4%B4%E9%83%A8%E5%8F%82%E6%95%B0/</link>
+      <pubDate>Mon, 26 May 2025 16:04:18 +0800</pubDate>
+      <author>me@example.com (codingxiaochen)</author>
+      <guid>http://localhost:1947/hugo-dev/post/hugo%E7%9A%84%E6%96%87%E7%AB%A0%E5%A4%B4%E9%83%A8%E5%8F%82%E6%95%B0/</guid>
+      
+        <description>&lt;p&gt;Hugo 文章头部参数（Front Matter）说明表格：&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;参数名&lt;/th&gt;
+          &lt;th&gt;含义说明&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;title&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;文章标题，在页面中显示为主标题。&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;date&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;创建日期，用于排序或显示发布时间（格式为 ISO8601）。&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;lastmod&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;最后修改时间，用于显示文章更新日期。&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;draft&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;是否为草稿（&lt;code&gt;true&lt;/code&gt; 表示草稿，发布时不会生成）。&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;keywords&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;页面关键词，通常用于 SEO 优化（数组形式）。&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;description&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;页面描述，用于 SEO 元标签和摘要信息。&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;tags&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;标签，用于分类文章主题，支持多个标签。&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;categories&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;分类，可用于更高层次的内容组织。&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;author&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;作者名，通常显示在文章中或用于元信息。&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;可选设置&lt;/th&gt;
+          &lt;th&gt;含义说明&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;weight&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;权重，数值越小越靠前；可以用来将文章置顶或排序。&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;comment&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;是否开启评论功能（&lt;code&gt;false&lt;/code&gt; 表示关闭）。&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;toc&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;是否显示目录（Table of Contents）。&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;autoCollapseToc&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;是否自动折叠目录（适用于多级目录）。&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;contentCopyright&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;是否使用自定义版权信息（可以为字符串或布尔值）。&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;reward&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;是否启用打赏功能（一般用于博客）。&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;mathjax&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;是否启用 MathJax（用于渲染数学公式）。&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;菜单相关（注释状态）&lt;/th&gt;
+          &lt;th&gt;含义说明&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;menu&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;将文章加入 Hugo 的菜单系统，例如主页导航栏。&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;parent&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;菜单中的父项名称（如果是子菜单）。&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;weight&lt;/code&gt;（菜单）&lt;/td&gt;
+          &lt;td&gt;菜单排序权重，数字越小越靠前。&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;如果你想让文章发布，记得将 &lt;code&gt;draft: true&lt;/code&gt; 改为 &lt;code&gt;draft: false&lt;/code&gt;。是否显示目录和评论也取决于你主题的支持情况。需要我帮你配置自动目录或 SEO 吗？&lt;/p&gt;
+&lt;h5 id=&#34;you-said&#34;&gt;You said:&lt;/h5&gt;
+&lt;p&gt;tags，categories都是用于分类吗？有什么不同？&lt;/p&gt;
+&lt;h6 id=&#34;chatgpt-said&#34;&gt;ChatGPT said:&lt;/h6&gt;
+&lt;p&gt;是的，&lt;code&gt;tags&lt;/code&gt; 和 &lt;code&gt;categories&lt;/code&gt; 都是用于对内容进行分类，但它们的&lt;strong&gt;用途和层次&lt;/strong&gt;有所不同：&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;项目&lt;/th&gt;
+          &lt;th&gt;&lt;code&gt;tags&lt;/code&gt;（标签）&lt;/th&gt;
+          &lt;th&gt;&lt;code&gt;categories&lt;/code&gt;（分类）&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;中文含义&lt;/td&gt;
+          &lt;td&gt;标签&lt;/td&gt;
+          &lt;td&gt;分类&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;用途定位&lt;/td&gt;
+          &lt;td&gt;细粒度的主题或关键词标记&lt;/td&gt;
+          &lt;td&gt;粗粒度的主题分组&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;数量&lt;/td&gt;
+          &lt;td&gt;一个文章可有多个标签&lt;/td&gt;
+          &lt;td&gt;通常建议一个或少数几个分类&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;是否可重复&lt;/td&gt;
+          &lt;td&gt;可高度复用（如“AI”、“工具”）&lt;/td&gt;
+          &lt;td&gt;一般用来表达文章归属的主要板块&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;结构层级&lt;/td&gt;
+          &lt;td&gt;无层级结构（扁平）&lt;/td&gt;
+          &lt;td&gt;可呈现层级结构（父分类-子分类）&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;用例&lt;/td&gt;
+          &lt;td&gt;描述文章的具体内容或关键词&lt;/td&gt;
+          &lt;td&gt;表示文章所属的主要栏目&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;页面作用&lt;/td&gt;
+          &lt;td&gt;用于生成关键词聚合页，方便搜索&lt;/td&gt;
+          &lt;td&gt;用于构建站点结构、导航或分类列表&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;举个例子&#34;&gt;举个例子：&lt;/h3&gt;
+&lt;p&gt;你有一篇文章标题为《推荐10个建站AI工具》：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;categories&lt;/code&gt;:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;yaml
+
+
+CopyEdit
+categories: [&amp;#34;网站建设&amp;#34;]
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;表示这篇文章属于“网站建设”这一主类。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;tags&lt;/code&gt;:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;yaml
+
+
+CopyEdit
+tags: [&amp;#34;AI工具&amp;#34;, &amp;#34;建站&amp;#34;, &amp;#34;效率工具&amp;#34;]
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;表示这篇文章涉及“AI 工具”、“建站”、“效率工具”等关键词，方便用户在相关标签页中查找。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;建议用法类比博客网站&#34;&gt;建议用法（类比博客网站）：&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;categories&lt;/code&gt; 像网站的主栏目（比如：编程 / 设计 / AI / 摄影）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;tags&lt;/code&gt; 像文章的标签云（比如：Python / 生成式AI / SEO / UI）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;如你的网站内容偏向技术文档、博客或内容聚合类，合理区分这两个可以提升 SEO 和用户体验。&lt;/p&gt;
+&lt;p&gt;如需我帮你设计分类和标签结构，也可以告诉我你的网站主题内容。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>网站建议AI工具汇总表</title>
+      <link>http://localhost:1947/hugo-dev/post/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%AEai%E5%B7%A5%E5%85%B7%E6%B1%87%E6%80%BB%E8%A1%A8/</link>
+      <pubDate>Sun, 25 May 2025 07:36:54 +0800</pubDate>
+      <author>me@example.com (codingxiaochen)</author>
+      <guid>http://localhost:1947/hugo-dev/post/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%AEai%E5%B7%A5%E5%85%B7%E6%B1%87%E6%80%BB%E8%A1%A8/</guid>
+      
+        <description>&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;工具/平台&lt;/th&gt;
+          &lt;th&gt;作用&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;特点&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;cursor_ai&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;AI 驱动的全栈开发 IDE&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;集成 AI 编程助手，适合前后端开发，支持调试、代码生成等全流程开发&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;windsurf_ai&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;简单、快速、便宜的 AI IDE&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;更轻量、响应更快，适合追求极简和效率的开发者&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;Replit&lt;/code&gt; Agent&lt;/td&gt;
+          &lt;td&gt;AI 驱动的应用开发平台&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Replit 的 Agent 特别适合快速构建和部署移动端应用，云端开发环境一体化&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;v0&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;AI UI 组件设计工具&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;极简 UI 生成，基于自然语言生成 React/Tailwind UI 组件&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;boltdotnew&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;微型 SaaS 构建平台&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;快速构建 MVP、SaaS 小工具，AI 驱动构建流程，低代码或无代码开发&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;lovable_dev&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;落地页（Landing Page）生成工具&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;专注设计转化率高的落地页，AI 一键生成内容和排版&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;cline&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;VS Code 中的 AI 编码助手&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;智能自动补全、重构、注释生成等功能，体验优秀，集成度高&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;OpenAI&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;提供 GPT 模型 API&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;强大的 GPT 模型（如 GPT-4），支持多模态输入，适合各种 AI 应用场景&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;vercel&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;SaaS 应用托管平台&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;部署简单、性能优越，适合前端和全栈 SaaS 项目，集成 Git 和 CI/CD&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;supabase&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;开源后端平台（数据库+存储）&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;替代 Firebase，提供 Postgres 数据库、认证、存储、Edge Functions&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;deepseek_ai&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;开源大模型平台&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;提供高质量中文支持的开源大模型，兼顾推理能力和本地部署性&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>我的独立开发之旅02</title>
+      <link>http://localhost:1947/hugo-dev/post/%E6%88%91%E7%9A%84%E7%8B%AC%E7%AB%8B%E5%BC%80%E5%8F%91%E4%B9%8B%E6%97%8502/</link>
+      <pubDate>Sun, 25 May 2025 07:31:28 +0800</pubDate>
+      <author>me@example.com (codingxiaochen)</author>
+      <guid>http://localhost:1947/hugo-dev/post/%E6%88%91%E7%9A%84%E7%8B%AC%E7%AB%8B%E5%BC%80%E5%8F%91%E4%B9%8B%E6%97%8502/</guid>
+      
+        <description>&lt;p&gt;##222222222&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title> SEO 报告中各项英文缩写的含义</title>
+      <link>http://localhost:1947/hugo-dev/post/seo-%E6%8A%A5%E5%91%8A%E4%B8%AD%E5%90%84%E9%A1%B9%E8%8B%B1%E6%96%87%E7%BC%A9%E5%86%99%E7%9A%84%E5%90%AB%E4%B9%89/</link>
+      <pubDate>Sat, 24 May 2025 13:11:46 +0800</pubDate>
+      <author>me@example.com (codingxiaochen)</author>
+      <guid>http://localhost:1947/hugo-dev/post/seo-%E6%8A%A5%E5%91%8A%E4%B8%AD%E5%90%84%E9%A1%B9%E8%8B%B1%E6%96%87%E7%BC%A9%E5%86%99%E7%9A%84%E5%90%AB%E4%B9%89/</guid>
+      
+        <description>&lt;p&gt;&lt;img src=&#34;https://files09.oaiusercontent.com/file-9v8uvmREMCb1cLr85oTLjC?se=2025-05-26T07%3A57%3A23Z&amp;amp;sp=r&amp;amp;sv=2024-08-04&amp;amp;sr=b&amp;amp;rscc=max-age%3D299%2C%20immutable%2C%20private&amp;amp;rscd=attachment%3B%20filename%3D38a37bd7-cc88-429b-962e-b3cca62893c2.png&amp;amp;sig=z2MkCVUDgWK6OqpulOY4MVPX3uJfDlYwiAJQ8udoca8%3D&#34; alt=&#34;Uploaded image&#34;&gt;&lt;/p&gt;
+&lt;p&gt;以下是你图片中显示的 SEO 报告中各项英文缩写的含义和解释表格：&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;缩写&lt;/th&gt;
+          &lt;th&gt;全称&lt;/th&gt;
+          &lt;th&gt;中文含义&lt;/th&gt;
+          &lt;th&gt;说明&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;DR&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Domain Rating&lt;/td&gt;
+          &lt;td&gt;域名评级&lt;/td&gt;
+          &lt;td&gt;衡量整个网站的外链权重，分数越高表示该网站在 SEO 中更有权威性（0-100）&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;UR&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;URL Rating&lt;/td&gt;
+          &lt;td&gt;页面评级&lt;/td&gt;
+          &lt;td&gt;衡量特定网页（URL）的外链权重，影响页面排名的能力（0-100）&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Backlinks&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Backlinks&lt;/td&gt;
+          &lt;td&gt;外部链接数量&lt;/td&gt;
+          &lt;td&gt;指向该页面的总外部链接数量（不去重）&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Domains&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Referring Domains&lt;/td&gt;
+          &lt;td&gt;引用域名数量&lt;/td&gt;
+          &lt;td&gt;指向该页面的独立网站数量（去重）&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Traffic&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Organic Traffic&lt;/td&gt;
+          &lt;td&gt;自然流量&lt;/td&gt;
+          &lt;td&gt;估算每月从 Google 搜索获得的访问量&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Keywords&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Organic Keywords&lt;/td&gt;
+          &lt;td&gt;自然关键词数量&lt;/td&gt;
+          &lt;td&gt;该页面在 Google 搜索中排名的关键词数量&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;补充说明&#34;&gt;补充说明：&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Keyword Difficulty（KD）92（Super hard）&lt;/strong&gt;：表示要想进入“calculate”这个关键词的前 10 名，大约需要从 &lt;strong&gt;932 个不同网站&lt;/strong&gt; 获得高质量外链，竞争极为激烈。&lt;/li&gt;
+&lt;li&gt;这些数据来自 &lt;strong&gt;Ahrefs&lt;/strong&gt;，是业界常用的 SEO 工具。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;如需我帮你找 &lt;strong&gt;难度较低但流量可观的关键词&lt;/strong&gt;，我也可以为你制定策略。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>我的第二篇文章</title>
+      <link>http://localhost:1947/hugo-dev/post/%E6%88%91%E7%9A%84%E7%AC%AC%E4%BA%8C%E7%AF%87%E6%96%87%E7%AB%A0/</link>
+      <pubDate>Sat, 24 May 2025 13:11:46 +0800</pubDate>
+      <author>me@example.com (codingxiaochen)</author>
+      <guid>http://localhost:1947/hugo-dev/post/%E6%88%91%E7%9A%84%E7%AC%AC%E4%BA%8C%E7%AF%87%E6%96%87%E7%AB%A0/</guid>
+      
+        <description>&lt;p&gt;我的独立开发之旅&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>科技小飞哥的博客</title>
+      <link>http://localhost:1947/hugo-dev/post/%E7%A7%91%E6%8A%80%E5%B0%8F%E9%A3%9E%E5%93%A5%E7%9A%84%E5%8D%9A%E5%AE%A2/</link>
       <pubDate>Tue, 27 Dec 2022 00:54:21 +0800</pubDate>
       <author>me@example.com (codingxiaochen)</author>
-      <guid>http://localhost:9778/hugo-dev/post/my-first-post/</guid>
+      <guid>http://localhost:1947/hugo-dev/post/%E7%A7%91%E6%8A%80%E5%B0%8F%E9%A3%9E%E5%93%A5%E7%9A%84%E5%8D%9A%E5%AE%A2/</guid>
       
-        <description>&lt;h1 id=&#34;这是我的第一篇博客&#34;&gt;这是我的第一篇博客&lt;/h1&gt;
+        <description>&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
 &lt;p&gt;这是我的第一篇&lt;strong&gt;博客&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://techxiaofei.com&#34;&gt;个人网站链接&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:9778/hugo-dev/img/hugo/hugo.png&#34; alt=&#34;图片&#34;&gt;&lt;/p&gt;
+&lt;p&gt;(&lt;a href=&#34;https://www.techxiaofei.com/post/hugo/hugo_collection/&#34;&gt;从零开始搭建个人博客网站系列 - 合集 - 科技小飞哥&lt;/a&gt;)&lt;/p&gt;
 </description>
       
     </item>
